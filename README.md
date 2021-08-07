@@ -20,11 +20,14 @@ XML Components -> Recycler Views , Card Views , Collapsing Toolbars.
  
 # Application Flow
 1. User Login using firebase
-2. Views a List of Hostels (Dummy Hostels with basic Information)
-3. Can View Detailed Information of each Hostel.
-4. Scrol down to view Recommended Hostels.
-5. Book a Hostel.
-6. View a hostel from the recommendations.
+2. (Optional) Create user if don't have account.
+3. Views a List of Hostels (Dummy Hostels with basic Information)
+4. Can View Detailed Information of each Hostel.
+5. Scroll down to view Recommended Hostels.
+6. View location in google map.
+7. Book a Hostel.
+8. Do Payment (Dummy Payment gateway)
+9. View a hostel from the recommendations.
 
 # Recommendations logic
 If the user has no bookings then Hostel are recommended on the basis of the **location** of the Hostel user is currently viewing.
