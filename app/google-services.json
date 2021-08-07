@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "21081533773",
+    "project_id": "hostelguide-339",
+    "storage_bucket": "hostelguide-339.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21081533773:android:5827be2ff7f6467ae8db04",
+        "android_client_info": {
+          "package_name": "com.example.hostelguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21081533773-kbbg9fiv2aauj9dsb0at9tfg0dno3f7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgwss-O2zI2XYn9gRUzwG2tuYxLXn644o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21081533773-kbbg9fiv2aauj9dsb0at9tfg0dno3f7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
