@@ -1,6 +1,8 @@
 package com.example.hostelguide;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.hostelguide.MainActivity;
+import com.example.hostelguide.LoginAcitvity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -148,7 +150,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
         if(s1.equals(s2))
         {
             Toast.makeText(getApplicationContext(),"Verified Successfully!!!",Toast.LENGTH_LONG).show();
-            Intent intent4 = new Intent(VerifyOTPActivity.this,HotelViewer.class);
+            Intent intent4 = new Intent(getApplicationContext(),MainActivity.class);
             startActivity(intent4);
         }
         else{

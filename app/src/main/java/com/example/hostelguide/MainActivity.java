@@ -32,6 +32,7 @@ import com.example.hostelguide.Util.CurrentUser;
 import com.example.hostelguide.Util.Hotel;
 import com.example.hostelguide.Util.HotelView;
 import com.example.hostelguide.Util.Reader;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -197,6 +198,11 @@ public class MainActivity extends AppCompatActivity {
                     }
                     Toast.makeText(getApplicationContext(),res,Toast.LENGTH_LONG).show();
                 }
+                return true;
+            case R.id.Logout:
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(),LoginAcitvity.class));
+                finishAffinity();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
