@@ -18,7 +18,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
 
     private EditText inputCode1, inputCode2, inputCode3, inputCode4, inputCode5, inputCode6;
     Button verify;
-    String s1,s2;
+    String s1,s2,otp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
         textMobile.setText(String.format(
                 "+91-%s", getIntent().getStringExtra("mobile")
         ));
+        otp=String.format("",getIntent().getStringExtra("otpnumber"));
 
         inputCode1 = findViewById(R.id.inputCode1);
         inputCode2 = findViewById(R.id.inputCode2);
@@ -75,7 +76,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
                 if(!s.toString().trim().isEmpty()){
                     inputCode3.requestFocus();
                 }
-                s2+=s.toString();
+                s1+=s.toString();
 
             }
 
@@ -95,6 +96,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
                 if(!s.toString().trim().isEmpty()){
                     inputCode4.requestFocus();
                 }
+                s1+=s.toString();
 
             }
 
@@ -114,6 +116,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
                 if(!s.toString().trim().isEmpty()){
                     inputCode5.requestFocus();
                 }
+                s1+=s.toString();
 
             }
 
@@ -133,6 +136,26 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
                 if(!s.toString().trim().isEmpty()){
                     inputCode6.requestFocus();
                 }
+                s1+=s.toString();
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+        inputCode6.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int i, int i1, int i2) {
+                if(!s.toString().trim().isEmpty()){
+                }
+                s1+=s.toString();
 
             }
 
@@ -147,7 +170,7 @@ public class VerifyOTPActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onClick(View view) {
-        if(s1.equals(s2))
+        if(s1.equals(otp))
         {
             Toast.makeText(getApplicationContext(),"Verified Successfully!!!",Toast.LENGTH_LONG).show();
             Intent intent4 = new Intent(getApplicationContext(),MainActivity.class);

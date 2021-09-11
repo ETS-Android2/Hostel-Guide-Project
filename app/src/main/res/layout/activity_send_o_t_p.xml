@@ -16,7 +16,7 @@
 
     <TextView android:layout_height="40dp" android:layout_width="wrap_content" android:gravity="center" android:textStyle="bold" android:textSize="16sp" android:textColor="@color/colorTextPrimary" android:text="@string/_91"/>
 
-    <EditText android:layout_height="40dp" android:layout_width="wrap_content" android:textStyle="bold" android:textSize="16sp" android:textColor="@color/colorTextPrimary" android:inputType="number" android:importantForAutofill="no" android:imeOptions="actionDone" android:hint="@string/_1234567890" android:background="@null" android:id="@+id/inputMobile"/>
+    <EditText android:layout_height="40dp" android:layout_width="wrap_content" android:textStyle="bold" android:textSize="16sp" android:textColor="@color/colorTextPrimary" android:maxLength="10" android:inputType="phone" android:importantForAutofill="no" android:imeOptions="actionDone" android:hint="@string/_1234567890" android:background="@null" android:id="@+id/inputMobile"/>
 
 </LinearLayout>
 

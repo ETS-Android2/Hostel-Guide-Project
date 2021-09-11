@@ -37,8 +37,22 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-database'
+    //noinspection DuplicatePlatformClasses
+    implementation "cz.msebera.android:httpclient:4.4.1.2"
+    implementation 'com.mashape.unirest:unirest-java:1.4.9'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-}
+
+
+
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    testImplementation 'junit:junit:4.12'
+//    //noinspection GradleCompatible
+//    implementation 'com.android.support:appcompat-v7:23.1.0'
+//    //noinspection GradleCompatible
+//    implementation 'com.android.support:design:23.0.0'
+//    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+
+    }
