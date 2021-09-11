@@ -26,7 +26,7 @@ XML Components -> Recycler Views , Card Views , Collapsing Toolbars.
 5. Scroll down to view Recommended Hostels.
 6. View location in google map.
 7. Book a Hostel.
-8. Do Payment (Dummy Payment gateway)
+8. Do Payment (Dummy Payment gateway), Verify OTP
 9. View a hostel from the recommendations.
 
 # Recommendations logic
